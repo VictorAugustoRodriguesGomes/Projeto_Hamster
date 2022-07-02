@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/base/icone.png">
+    <title>Projeto Hamster</title>
+    <link rel="stylesheet" href="src/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section class="introduction">
+        <div class="title">
+            <h1> Gerador de link para WhatsApp. </h1>
+            <p> Bem-vindo à ferramenta que gera links de contato do WhatsApp!</p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col70">
+                    <div id="information" class="information">
+                        <h1>Para ciar um link de contato do WhatsApp: </h1>
+                        <p> 1. Insira o n.º do WhatsApp Ex: (85) 9 9660–5866. </p>
+                        <p> 2. Escreva a mensagem, que será exibida (opcional). </p>
+                        <p> 3. Clique em “CRIAR LINK”. </p>
+                        <p> 4. Copie o link e faça o download do QR Code para compartilhar. </p>
+                        <p> ATENÇÃO: nenhum dos dados informados serão guardados. </p>
+                    </div>
+                </div>
+
+                <div class="col30">
+                    <div id="inputField">
+                        <div class="InputGroup">
+                            <label for="inputNumber">Número do WhatsApp</label>
+                            <input id="inputNumber" type="text" placeholder="(DDD) X XXXX-XXXX" required
+                                autocomplete="off" maxlength="11">
+                        </div>
+
+                        <div class="InputGroup">
+                            <label style="margin: 10px 0;" for="inputMessage">Mensagem</label>
+                            <textarea id="inputMessage" rows="4" required autocomplete="off"
+                                placeholder="Escreva a mensagem, que será exibida (opcional)."></textarea>
+                        </div>
+
+                        <a id="btn"> criar link </a>
+                        <p class="valid" id="valid">ATENÇÃO: Informe um número do WhatsApp valido!</p>
+                    </div>
+
+                    <div class="endField" id="endField">
+                        <div class="qrcode" id="qrcode"></div>
+
+                        <div id="information3" class="information">
+                            <h1>Link:</h1>
+                            <h2 id="Nlink"></h2>
+                            <p id="informationlink"> </p>
+                        </div>
+
+                        <div id="fieldBTN" class="fieldBTN">
+                            <a id="copied"> copiar link </a>
+                            <a id="downloadQrCode" download=""> Baixar QR Code </a>
+                            <a id="newLink"> Novo link? </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about">
+                <h1>Sobre o Projeto</h1>
+                <p> Olá! Meu nome é Victor Augusto e sou responsável por desenvolver esse projeto nomeado com Projeto
+                    Hamster(utilizei esse nome genérico para organização pessoal).</p>
+                <p> O objetivo é demonstrar as minhas habilidades como desenvolvedor. </p>
+                <p> Desenvolvi esse projeto para gerar um acesso rápido, por um link ou QR Code, a um contato do
+                    WhatsApp, facilitando assim o compartilhamento do mesmo.
+                </p>
+                <p> Para isso, informe o número do WhatsApp que deseja compartilhar, e uma mensagem que deseja vincular
+                    ao contato (a mensagem sendo opcional). </p>
+                <p> O projeto foi desenvolvido utilizando HTML, CSS e JavaScript. </p>
+                <p> Utilizei também as bibliotecas Jquery e qrCodeJs para ajudar no desenvolvimento.</p>
+                <p> Então o que você achou desse projeto? </p>
+                <p> Mande a sua mensagem para esse e-mail: victor.augusto.desenvolvedor@gmail.com. </p>
+                <p> E se você quiser ver mais dos meus projetos, confiram o meu LinkedIn ou o meu GitHub. </p>
+                <p> Para mais informações de contatos e afins, o meu currículo se encontra a sua disposição logo a
+                    baixo.
+                </p>
+
+                <div class="fieldBTN">
+                    <a class="btn" href="src/doc/Victor Augusto Rodrigues Gomes - Currículo.pdf"
+                        download="Victor Augusto Rodrigues Gomes - Currículo.pdf" type="application/pdf">
+                        Baixe meu Currículo</a>
+                    <a href=https://victor-augusto-dev.firebaseapp.com/ class="btn"> Meu Portfólio </a>
+                    <a href="https://linkedin.com/in/victor-augusto-dev" class="btn"> Meu LinkedIn </a>
+                    <a href="https://github.com/VictorAugustoRodriguesGomes" class="btn"> Meu GitHub </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="copyrightText">
+        <p>Copyright © 2021-Atual. Victor Augusto. Todos os direitos reservados.</p>
+    </div>
+
+    <script type="application/javascript" src="src/js/index.js"></script>
+</body>
+
+</html>
