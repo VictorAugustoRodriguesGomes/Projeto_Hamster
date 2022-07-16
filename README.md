@@ -2,7 +2,7 @@
 
 Olá! Meu nome é Victor Augusto e sou responsável por desenvolver esse projeto, nomeado com Projeto Hamster(utilizei esse nome genérico para organização pessoal).
 
-Com objetivo de demonstrar as minhas habilidades como desenvolvedor, desenvolvi esse projeto para gerar um acesso rápido, por um link ou QR Code, a um contato do WhatsApp, facilitando assim o compartilhamento do mesmo. Para isso, informe o número do WhatsApp que deseja compartilhar, e uma mensagem que deseja vincular ao contato (a mensagem sendo opcional). O projeto foi desenvolvido utilizando HTML, CSS e JavaScript. Utilizei também as bibliotecas Jquery e qrCodeJs para ajudar no desenvolvimento.
+Com objetivo de demonstrar as minhas habilidades como desenvolvedor, desenvolvi esse projeto para gerar um acesso rápido, por um link ou QRCode, a um contato do WhatsApp, facilitando assim o compartilhamento do mesmo. Para isso, informe o número do WhatsApp que deseja compartilhar, e uma mensagem que deseja vincular ao contato (a mensagem sendo opcional). O projeto foi desenvolvido utilizando HTML, CSS e JavaScript. Utilizei também as bibliotecas Jquery e qrCodeJs para ajudar no desenvolvimento.
 </br>
 </br>
 
